@@ -1,0 +1,186 @@
+
+.header-container
+  background-color: #364d67
+  .header-wrapper
+    width: 100vw
+    height: 100vh
+    background:
+      image: url('assets/imgs/Hero-image.png')
+      size: cover
+      position: center center
+      repeat: no-repeat
+
+    .nav-wrapper
+      padding-top: 48px
+      .nav-container
+        width: 70%
+        //max-width: 1100px
+        margin: 0 auto
+
+      .nav-content
+        position: relative
+        background-color: #23364b
+        .ribbon
+          position: absolute
+          width: 20px
+          right: 0
+          height: 100%
+          background-color: #009fe1
+          //z-index: 3
+        .nav-logo
+          position: relative
+          .logo
+            position: absolute
+            height: 70px
+            left: 50%
+            top: -15px
+            transform: translateX(-50%)
+
+        .nav-list
+          width: 100%
+          margin: 0 auto
+          position: relative
+          .nav-element
+            list-style: none
+            display: inline-block
+            padding: 10px 0 10px 0
+            font-size: 20px
+            text-transform: uppercase
+            font-weight: 700
+            width: 20%
+            vertical-align: middle
+            text-align: center
+            &:nth-child(2n+3)
+              //float: right
+              margin-left: 15%
+            a
+              position: relative
+              color: #ffda4e
+              text-decoration: none
+              text-align: center
+              transition: color 0.7s
+              &:before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 1px
+                background-color: #ffda4e
+                top: 100%
+                transform: scale3d(0, 5, 1)
+                transform-origin: 0% 50%
+                transition: transform 0.3s
+                transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9)
+              &:hover,
+              &:active
+                color: white
+
+
+          .current-nav
+            a
+              &:before
+                transform: scale3d(1, 2, 1)
+
+    .hero-title
+      color: white
+      position: absolute
+      bottom: 17%
+      left: 0%
+      text-transform: uppercase
+      font-size: 52px
+      letter-spacing: 7px
+      font-weight: 900
+      text-align: center
+      width: 100%
+      span
+        color: #ffda4e
+        font-size: 60px
+
+#quote
+  width: 100%
+  height: 700px
+  background-color: #364d67
+  padding-top: 100px
+
+  .quote-wrapper
+    width: 90%
+    height: 500px
+    background-color: #102e50
+    position: relative
+    overflow: hidden
+    box-shadow: 0px 0px 10px rgba(30,56,85,0.9)
+    text-align: center
+    &:before
+      position: absolute
+      content: ''
+      width: 900px
+      height: 900px
+      border-radius:100%
+      background-color: #2d4765
+      right: -400px
+      bottom: -350px
+      transform: scale(0,0)
+      transition: transform 5s
+
+    .quote-content
+      width: 100%
+      height: 100%
+      .common-quote
+        color: white
+        text-align: center
+        position: relative
+        padding: 10px
+        margin: 0
+      .airquote
+        margin: 0 auto
+        position: relative
+      .quote
+        line-height: 50px
+        font-family: 'Sorts Mill Goudy',sans-serif
+      .author
+        display: inline-block
+        padding-top: 50px
+        font-family: 'Sorts Mill Goudy',sans-serif
+      @media only screen and (max-width: 1400px)
+        .quote
+          font-size: 20px
+        .author
+          font-size: 10px
+
+  .scaleup
+    &:before
+      transform: scale(1,1)
+
+
+#content
+  background-color: #364d67
+  padding: 20px 0 40px
+  .content-wrapper
+    .blog
+      height: 500px
+      background: #23364b
+      .blog-picture
+        background-image: url(assets/imgs/motors.png)
+        height: 40%
+        background-size: cover
+      .blog-content
+        padding: 20px 50px
+        font-size: 10px
+        .blog-category
+          color: #0494d2
+          .category
+            display: inline-block
+
+
+
+        .blog-title
+        .blog-description
+        .blog-meta
+          .blog-author
+            .icon
+            .author
+          .blog-time
+            .icon
+            .time
+          .blog-comments
+            .icon
+            .comments

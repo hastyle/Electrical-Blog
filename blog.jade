@@ -1,0 +1,81 @@
+include ./head.jade
+
+    header
+      .header-container
+        .header-wrapper.animated.fadeIn
+          .header-content.clearfix
+            nav
+              .nav-wrapper
+                .nav-container
+                  .nav-content
+                    .ribbon
+                    .nav-logo
+                      img.logo(src="assets/imgs/logo.png")
+                    ul.nav-list
+                      li.nav-element
+                        a(href="#") Home
+                      li.nav-element
+                        a(href="#") Technical Articles
+                      li.nav-element
+                        a(href="#") Search
+                      li.nav-element
+                        a(href="#") Menu
+            h1.hero-title
+              span E
+              | lectrical
+              img.logo(src="assets/imgs/logo.png")
+              span  B
+              |log
+
+    section#quote
+      .quote-wrapper
+        .quote-content
+          img.airquote.img-responsive(src="assets/imgs/air-quote.png")
+          h2.common-quote.quote Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          cite.author.common-quote -C.S Lewis
+
+    section#content
+      .content-wrapper
+        .container
+          .row
+            .col-sm-9
+              .col-sm-7
+                .blog
+                  .blog-picture
+                  .blog-content
+                    .blog-category
+                      i.fa.fa-circle
+                      h5.category Switchgears
+                    .blog-title
+                    .blog-description
+                    .blog-meta
+                      .blog-author
+                        .icon
+                        .author
+                      .blog-time
+                        .icon
+                        .time
+                      .blog-comments
+                        .icon
+                        .comments
+              .col-sm-5
+                .blog
+                  .blog-picture
+                  .blog-content
+                    .blog-category
+                    .blog-title
+                    .blog-description
+                    .blog-meta
+                      .blog-author
+                        .icon
+                        .author
+                      .blog-time
+                        .icon
+                        .time
+                      .blog-comments
+                        .icon
+                        .comments
+
+
+
+    include ./footer.jade
